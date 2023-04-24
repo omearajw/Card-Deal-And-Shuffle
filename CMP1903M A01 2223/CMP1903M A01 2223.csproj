@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basic.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="Pack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

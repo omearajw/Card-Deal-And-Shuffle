@@ -11,7 +11,7 @@ namespace CMP1903M_A01_2223
     {
         private static List<Card> pack;
 
-        static Pack()
+        public Pack()
         {
             //Initialise the card pack here
             pack = new List<Card>();
@@ -33,7 +33,7 @@ namespace CMP1903M_A01_2223
             }
         }
 
-        public static bool shuffleCardPack(int typeOfShuffle)
+        public bool shuffleCardPack(int typeOfShuffle)
         {
             //Shuffles the pack based on the type of shuffle
             Random rand = new Random();
@@ -106,7 +106,7 @@ namespace CMP1903M_A01_2223
             }
             return true;
         }
-        public static Card dealCard()
+        public Card dealCard()
         {
             //Deals one card
             //If there are no cards in the pack then return null
@@ -121,7 +121,7 @@ namespace CMP1903M_A01_2223
             //Returns the card
             return dealtCard;
         }
-        public static List<Card> dealCard(int amount)
+        public List<Card> dealCard(int amount)
         {
             //Deals the number of cards specified by 'amount'
             //If there aren't enough cards in the pack then return null
