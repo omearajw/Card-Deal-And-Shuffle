@@ -14,11 +14,11 @@ namespace CMP1903M_A01_2223
             Console.WriteLine("Welcome to MathsTutor!");
             Console.ReadLine();
             Console.Clear();
-
-            //Creates and calls menu
-            Menu menu = new Menu();
-            int selection = menu.ShowMenu();
-            menu.MenuSelection(selection);
+            while (true)
+            {
+                int selection = Menu.ShowMenu();
+                Menu.MenuSelection(selection);  
+            }
         }
     }
 }

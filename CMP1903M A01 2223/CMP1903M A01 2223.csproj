@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advanced.cs" />
     <Compile Include="Basic.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="Menu.cs" />

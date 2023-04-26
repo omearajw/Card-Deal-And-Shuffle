@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace CMP1903M_A01_2223
 {
-    class Menu
+    static class Menu
     {
-        public int ShowMenu()
+        public static int ShowMenu()
         {
             Console.WriteLine("1. Instructions \n2. Basic \n3. Advanced \n4. Quit");
             int selection = int.Parse(Console.ReadLine());
             Console.Clear();
             return selection;
         }
-        public void MenuSelection(int selection)
+        public static void MenuSelection(int selection)
         {
             if (selection == 1)
             {
@@ -32,6 +32,17 @@ namespace CMP1903M_A01_2223
             {
                 Console.WriteLine("BASIC MODE");
                 Basic.BasicMode();
+            }
+            else if (selection == 3)
+            {
+                Console.WriteLine("ADVANCED MODE");
+                Advanced.AdvancedMode();
+            }
+            else if (selection == 4)
+            {
+                Console.WriteLine("Thanks for playing!");
+                Console.ReadLine();
+                Environment.Exit(0);
             }
         }
     }
